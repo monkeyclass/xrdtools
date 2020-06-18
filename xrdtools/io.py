@@ -254,7 +254,7 @@ def _read_axis_info(uid_pos, n):
     dict
         Axis settings stored in a dictionary.
     """
-    info = {'axis': uid_pos.get('axis'), 'unit': uid_pos.get('unit'), 'data': np.array([0, 0])}
+    info = {'axis': uid_pos.get('axis'), 'unit': uid_pos.get('unit'), 'data': np.array([0.0, 0.0])}
     is_array = True
 
     for child in list(uid_pos):
